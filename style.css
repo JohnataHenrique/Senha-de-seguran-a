@@ -1,0 +1,87 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#051B38;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    width:800px;
+}
+
+h1,p{
+    text-align:center;
+}
+
+.senha-box{
+    margin:30px 0;
+    display:flex;
+}
+
+.senha-box input{
+    flex:1;
+    padding:15px;
+    font-size:30px;
+    border:none;
+    background:#0B2B5A;
+    color:white;
+}
+
+.senha-box button{
+    width:120px;
+    background:#0077ff;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+.config{
+    border:2px solid #0d4d96;
+    padding:30px;
+}
+
+.tamanho{
+    margin:20px 0;
+}
+
+.contador{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-top:10px;
+}
+
+.contador button{
+    width:40px;
+    height:40px;
+    font-size:22px;
+    cursor:pointer;
+}
+
+.opcoes{
+    display:grid;
+    gap:12px;
+    margin:30px 0;
+}
+
+.barra{
+    width:250px;
+    height:20px;
+    background:#12396f;
+}
+
+#nivel{
+    width:20%;
+    height:100%;
+    background:red;
+    transition:.4s;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gerador de Senhas</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Gerador de Senhas</h1>
+    <p>Gere instantaneamente uma senha aleatória e segura</p>
+
+    <div class="senha-box">
+        <input type="text" id="senha" readonly>
+        <button onclick="gerarSenha()">Gerar</button>
+    </div>
+
+    <div class="config">
+
+        <h2>Personalize sua senha</h2>
+
+        <div class="tamanho">
+            <label>Número de caracteres</label>
+
+            <div class="contador">
+                <button onclick="alterarTamanho(-1)">-</button>
+                <span id="valor">12</span>
+                <button onclick="alterarTamanho(1)">+</button>
+            </div>
+        </div>
+
+        <div class="opcoes">
+
+            <label>
+                <input type="checkbox" id="maiusculas" checked>
+                Letras maiúsculas
+            </label>
+
+            <label>
+                <input type="checkbox" id="minusculas" checked>
+                Letras minúsculas
+            </label>
+
+            <label>
+                <input type="checkbox" id="numeros">
+                Números
+            </label>
+
+            <label>
+                <input type="checkbox" id="simbolos">
+                Símbolos
+            </label>
+
+        </div>
+
+        <div class="forca">
+            <label>Força da senha</label>
+
+            <div class="barra">
+                <div id="nivel"></div>
+            </div>
+
+            <p id="textoForca">Fraca</p>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
